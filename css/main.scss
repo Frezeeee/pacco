@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1232px;
+    margin: 0 auto;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 35px 0;
+    background-color: white;
+    z-index: 5; 
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+    &__letter{
+        transition: all 0.3s;
+    }
+    &__letter:hover{
+        color: #624DE3;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    &__button{
+        background-color: #624DE3;
+        padding: 14px 26px;
+        color: white;
+        border: 0;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    &__logo{
+        cursor: pointer;
+    }
+}
+.section{
+    background-color:#100A30;
+    color: white;
+    padding-top: 62px+90px;
+    max-height: 1055px;
+    &__par{
+        max-width: 596px;
+        text-align: center;
+        margin: 0 auto;
+        opacity: 0.7;
+        margin-bottom: 48px;
+    }
+    &__buttons{
+        max-width: 394px;
+        align-items: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2px;
+    }
+    &__button1{
+        padding: 15px 46px;
+        background-color:#624DE3;
+        color: white;
+        border: 0;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    &__button2{
+        padding: 15px 37px;
+        background:transparent;
+        color:#C3C1CB;
+        border: 1px solid #C3C1CB;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    &__img{
+        display: flex;
+        justify-content: center; 
+    }
+    
+}
+h1{
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    max-width: 563px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+.card{
+            margin-bottom: 146px;
+    margin-top: 214px;
+    &__h2{
+        color: #100A30;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        max-width: 591px;
+        margin: 0 auto;
+        margin-bottom: 62px;
+    }
+    &__original{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+    }
+    &__top{
+        background-color: #100A30;
+        color: white;
+        padding-left: 26px;
+        padding-bottom: 26px;
+    }
+    &__logo2{
+        margin-bottom: 13px;
+    }
+    &__gratuit{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    &__basique{
+        font-weight: 400;
+        font-size: 24px;
+        color:#19C787;
+    }
+    &__pro{
+        font-weight: 400;
+        font-size: 24px;
+        color: #FF9F1C;
+    }
+    &__ul{
+        list-style: none;
+        padding: 26px;
+    }
+    &__li:before{
+        content:"";
+        background-image: url(../img/PupleOk.svg);
+        width: 20px;
+        height: 20px;
+        display: block;
+        position:absolute;
+        top: 0;
+        left:0;
+    }
+    &__lio:before{
+        content:"";
+        background-image: url(../img/GreenOk.svg);
+        width: 20px;
+        height: 20px;
+        display: block;
+        position:absolute;
+        top: 0;
+        left:0;
+    }
+    &__lia:before{
+        content:"";
+        background-image: url(../img/YellowOk.svg);
+        width: 20px;
+        height: 20px;
+        display: block;
+        position:absolute;
+        top: 0;
+        left:0;
+    }
+    &__li{
+        position:relative;
+        padding-left: 56px;
+        margin-bottom: 16px;
+        font-weight: 700;
+
+    }
+    &__lio{
+        position:relative;
+        padding-left: 56px;
+        margin-bottom: 16px;
+        font-weight: 700;
+
+    }
+    &__lia{
+        position:relative;
+        padding-left: 56px;
+        margin-bottom: 16px;
+        font-weight: 700;
+
+    }
+    &__bottom{
+        background:rgba(16, 10, 48, 0.03);
+        border-radius: 0 0 8px 8px;
+    }
+    &__bottomg{
+        background:rgba(25, 199, 135, 0.05);
+        border-radius: 0 0 8px 8px;
+    }
+    &__bottomw{
+        background: rgba(252, 185, 52, 0.05);;
+        border-radius: 0 0 8px 8px;
+    }
+    &__cot:before{
+        content: "";
+        background-image: url(../img/card-seriy.svg);
+        width: 395px;
+        height: 123px;
+        display: block;
+        position: relative;
+        border-radius: 8px 8px 0 0;  
+    }
+    &__seriy{
+        cursor: pointer;
+        transition: all 0.3s;
+        border-radius: 8px;
+    }
+    &__seriy:hover{
+        box-shadow: 0 0 25px #DBDAE0 ;
+        transition: all 0.3s;
+    }
+    &__green{
+        cursor: pointer;
+        transition: all 0.3s;
+        border-radius: 8px;
+    }
+    &__green:hover{
+        box-shadow: 0 0 25px #b0dccc ;
+        transition: all 0.3s;
+    }
+    &__yellow{
+        cursor: pointer;
+        transition: all 0.3s;
+        border-radius: 8px;
+    }
+    &__yellow:hover{
+        box-shadow: 0 0 25px#e4d2ac ;
+        transition: all 0.3s;
+    }
+    &__cote:before{
+        content: "";
+        background-image: url(../img/card-green.svg);
+        width: 395px;
+        height: 123px;
+        display: block;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+    }
+    &__coto:before{
+        content: "";
+        background-image: url(../img/card-yellow.svg);
+        width: 395px;
+        height: 123px;
+        display: block;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+    }
+    &__df{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__grn{
+        display: flex;
+        padding-right: 36px;
+    }
+    &__money{
+        font-size: 48px;
+    }
+    &__mons{
+        font-size: 15px;
+    }
+}
+.comments{
+    &__body  {
+        display: flex;
+        gap: 40px;
+    }
+    &__left{
+        max-width: 596px;
+    }
+   &__right {
+        max-width: 596px;
+        padding-top: 47px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 44px;
+        padding-bottom: 121px;
+    }
+    &__h2{
+        font-size: 48px;
+        font-weight: 700;
+        max-width: 375px;
+        padding-top: 37px;
+        padding-bottom: 81px;
+    }
+    &__topleft{
+        display: flex;
+        cursor: pointer;
+    }
+    &__topee{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 36px;
+    }
+    &__second1{
+        background-color: #E8E5FB;
+        padding: 40px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+    &__three1{
+        background-color:#E8FAF3;
+        padding: 40px;
+        border-radius: 8px;
+    }
+    &__img{
+        padding-right: 16px;
+    }
+    &__h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__pid{
+        color: #4C4764;
+    }
+    &__text{
+        color: #4C4764;
+        letter-spacing: 0.18px;
+        padding-bottom: 20px;
+    }
+    &__text2{
+        padding-bottom: 0;
+    }
+    &__rep{
+        color: #100A30;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    &__first2{
+        background-color: #FDEBEE;
+        padding: 40px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+    &__text21{
+        padding-bottom: 0;
+    }
+    &__second2{
+        background-color: #E6F3FF;
+        padding: 40px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+    &__three2{
+        background-color: #FFF5E1;
+        padding: 40px;
+        border-radius: 8px;
+    }
+    &__text31{
+        padding-bottom: 0;
+    }
+}
+.footer{
+    background-color: #F8F8F9;
+    padding: 55px 0;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-bottom: 33px;
+        cursor: pointer;
+    }
+    &__ul1{
+        margin-bottom: 30px;
+    }
+    &__sites{
+        display: flex;
+        gap: 24px;
+    }
+    &__simg{
+        cursor: pointer;
+    }
+    &__h4{
+        margin-bottom: 24px;
+    }
+}
+ul{
+    list-style: none;
+    line-height: 2;
+    color: #4C4764;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: #100A30;
+}
